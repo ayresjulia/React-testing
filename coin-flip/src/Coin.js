@@ -20,13 +20,13 @@ const Coin = (props) => {
 	return (
 		<div className="Coin">
 			<h1>Let's flip a coin!</h1>
-			{isShowing && <img className="Coin-img" src={coin} alt="" />}
+			{isShowing && <img data-testid="coin-img" className="Coin-img" src={coin} alt="" />}
 			<div>
-				<button className="Coin-btn" onClick={flip}>
+				<button data-testid="coin-btn" className="Coin-btn" onClick={flip}>
 					FLIP ME
 				</button>
 			</div>
-			<p>
+			<p data-testid="coin-count">
 				Out of {count} flips, there have been {head} heads and {tail} tails.
 			</p>
 		</div>

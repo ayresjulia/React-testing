@@ -11,11 +11,14 @@ exports[`matches snapshot 1`] = `
     <div>
       <button
         class="Coin-btn"
+        data-testid="coin-btn"
       >
         FLIP ME
       </button>
     </div>
-    <p>
+    <p
+      data-testid="coin-count"
+    >
       Out of 0 flips, there have been 0 heads and 0 tails.
     </p>
   </div>
